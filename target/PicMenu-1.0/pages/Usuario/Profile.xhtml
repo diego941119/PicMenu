@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+    <body style="margin: 0;">
+
+        <ui:composition template="/WEB-INF/Template.xhtml">
+
+            <hgroup class="Profile" style="background-image: url(../resources/images/res.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    height: 500px;
+                    margin: 0;">
+                <figure class="Profile-imageContainer" style="text-align: center;
+                        margin:0;
+                        padding-top: 12em;">
+                    <img class="Profile-image" src="../resources/images/profile.jpg" width="300px" style="border-radius: 47%;"></img>
+                    <figcaption class="Profile-name" style="color: whitesmoke;
+                                background-color: black;
+                                height: 2em;">Nombre del restaurante</figcaption>
+                </figure>
+            </hgroup>
+            <section class="Menu" style="background-color:#d7efb1;
+                     margin: 0;">
+                <article class="Information" style="font-family: sans-serif;
+                         text-align: center;">
+                    <h1 class="Information-tittle">Información del restaurante</h1>
+                    <div class="Reseña">
+                        <h2 class="Reseña-tittle">Reseña</h2>
+                        <p class="Reseña-description">descripción corta de lo que ofrece el restaurante</p>
+                    </div>
+                    <div class="Telephone">
+                        <h3 class="Telephone-tittle">Telefono</h3>
+                        <p class="Telephone-number">321-245-4125</p>
+                    </div>
+                    <div class="Direction">
+                        <h4 class="Direction-tittle">Dirección</h4>
+                        <p class="Direction-description">Calle 42 #45-26</p>
+                    </div>
+                    <button class="Obtein-button" style="font-size: 1.75em;
+                            border: none;">Ver Menús</button>
+                </article>
+                <!-- Esto va en javascript -->
+                <article>
+                    <div style="display: inline-block">Menú de dia</div>
+                    <div style="display: inline-block">Menú por combos</div>
+                    <div style="display: inline-block">Plato a la carta</div>
+                    <div style="display: inline-block; right: 0;">Promociones</div>
+                </article>
+            </section>
+
+        </ui:composition>
+    </body>
+</html>

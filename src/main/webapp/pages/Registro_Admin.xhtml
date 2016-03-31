@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:jsf="http://xmlns.jcp.org/jsf">
+
+    <ui:composition template="/WEB-INF/Template.xhtml">
+        <ui:define name="body">
+
+            <h:form id="formRegistroRestaurante" class="Form-register">
+
+
+
+                <input       jsf:id="nombre" 
+
+                             type="text" 
+                             placeholder="Nombre"
+                             jsf:value="#{usuarioController.usuario.nombres}"
+                             required="true" >
+
+                </input>
+
+
+                <input jsf:id="telefono" 
+                       type="num"
+                       placeholder="Telefono"
+                       jsf:value="#{usuarioController.usuario.telefono}"
+                       required="true" >
+                </input>
+
+
+                <input jsf:id="email"
+                       type="num"
+                       placeholder="Correo Electronico"
+                       required="true" 
+                       jsf:value="#{usuarioController.usuario.email}"
+                       requiredMessage="El email ya existe">
+                </input>
+
+
+
+                <select class="Select" 
+                        jsf:value="#{usuarioController.ciudad}" 
+                        required="true" size="1">
+                    <f:selectItem itemLabel="Ciudad"/>
+                    <f:selectItems value="#{ciudadController.ciudadList}"
+                                   var="idCiudad"
+                                   itemValue="#{idCiudad.ciudadesPK.idCiudad},#{idCiudad.departamentos.idDepartamento}"
+                                   itemLabel="#{idCiudad.nombreCiudad}"/>             
+                </select>
+
+                <input     
+                    jsf:id="password" 
+                    jsf:value="#{usuarioController.usuario.password}" 
+                    required="true" 
+                    type="password"
+                    placeholder="Contraseña"
+                    title="La contraseña debe contener minimo 10 caracteres entre minusculas y mayusculas">
+                    <f:ajax execute="@this" render="Contraseña :growl"/>
+                </input>
+
+
+                <button jsf:actionListener="#{usuarioController.create()}" 
+                        type="submit"
+                        >
+                    Registrarse!
+                </button>
+
+
+
+
+
+
+
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

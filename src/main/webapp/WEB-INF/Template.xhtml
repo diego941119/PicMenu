@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:jsf="http://xmlns.jcp.org/jsf">
+
+    <head jsf:id="head">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content ="whidth=device-whidth,minimum-scale=1,maximum-scale=1"/>
+        <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,700' rel='stylesheet' type='text/css'></link>
+        <link rel="stylesheet" href="#{request.contextPath}/resources/css/normalize.css"></link>
+        <link rel="stylesheet" href="#{request.contextPath}/resources/css/estilos.css"></link>
+
+
+        <title><ui:insert name="title">PicMenu</ui:insert></title>
+    </head>
+    <body jsf:id="body">
+        <header class="Header">
+            <nav class="MainMenu">
+
+                <ul class="MainMenu-list">
+                    <img class="image-logo" src="#{request.contextPath}/resources/images/Logo.jpg" width="300px" href="/index.xhtml"></img>
+                    <input class="MainMenu-Search" type="search" placeholder="¿Que Restaurante Buscas?" requiered="true"/>
+                    <a href="#Resgistrarse" class="boton-search">Buscar</a>
+                    <li class="MainMenu-item" onclick="RegistroDesplegable()"><a href="#Resgistrarse" class="MainMenu-Register">Registrarse</a></li>
+                    <li class="MainMenu-item" ><a jsf:outcome="/pages/Login.xhtml" class="MainMenu-link">Ingresar</a></li>
+                    <li class="MainMenu-item"><a jsf:outcome="/index.xhtml" class="MainMenu-link">Inicio</a></li>
+                </ul>
+
+            </nav>
+            <nav class="" id="Nav-Desplegable" style="display: inline-block;
+                 background-color: #d21834;
+                 height: 4em;
+                 padding: 2em;
+                 text-align: center;
+                 text-decoration: none;
+                 top: 6em;
+                 position: fixed;
+                 display: none;
+                 float: right;
+                 border-radius: .5em;
+                 z-index: 1;
+                 right: 0;">
+                <li class=""><a jsf:outcome="/pages/Registro_Usu.xhtml" class="">Usuario</a></li>
+                <li class=""><a jsf:outcome="/pages/Registro_Admin.xhtml" class="">Restaurante</a></li>
+            </nav>
+
+            <nav class="" id="Login-Desplegable" style="display: inline-block;
+                 background-color: #d21834;
+                 height: 4em;
+                 color: white;
+                 padding: 2em;
+                 text-align: center;
+                 text-decoration: none;
+                 position: absolute;
+                 top: 6em;
+                 position: fixed;
+                 display: none;
+                 z-index: 1;
+                 right: 4em;
+                 border-radius: .5em;">                              
+                <!--<li class=""><a jsf:outcome="/pages/Login_Usu.xhtml" class="">Usuario</a></li>
+                <li class=""><a jsf:outcome="/pages/Login_Admin.xhtml" class="">Restaurante</a></li>-->
+            </nav>
+        </header>
+        <ui:insert name="body">
+            default body    
+        </ui:insert>
+        <Footer class="footer">
+            <div class="Subfooter">
+                <li class="Footer-item"><a jsf:outcome="/pages/Footer/Condiciones.xhtml"  class="FooterLink">Condiciones</a></li>
+                <li class="Footer-item"><a jsf:outcome="/pages/Footer/Politicas.xhtml"  class="FooterLink">Políticas</a></li>
+                <li class="Footer-item"><a jsf:outcome="/pages/Footer/QuienesSomos.xhtml"  class="FooterLink">¿Quienes Somos?</a></li>
+                <li class="Footer-item"><a jsf:outcome="/pages/Footer/Desarrolladores.xhtml" class="FooterLink">Desarrolladores</a></li>
+            </div>
+            <div class="Icon">
+                <a class="icon-facebook2" href="https://www.facebook.com/PicMen%C3%BA-1660696487495369" target="_blank"></a>
+                <a class="icon-twitter" target="_blank"></a>
+            </div>
+        </Footer>
+    </body>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="#{request.contextPath}/resources/js/registroDesplegable.js"></script>
+</html>

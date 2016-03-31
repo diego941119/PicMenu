@@ -1,0 +1,308 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?7w3vpm');
+	src:url('fonts/icomoon.eot?7w3vpm#iefix') format('embedded-opentype'),
+		url('fonts/icomoon.ttf?7w3vpm') format('truetype'),
+		url('fonts/icomoon.woff?7w3vpm') format('woff'),
+		url('fonts/icomoon.svg?7w3vpm#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icomoon' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook2:before {
+	content: "\e900";
+        color: #3b5998;
+        display: inline-block;
+}
+.icon-twitter:after {
+	content: "\e901";
+        color: #4099FF;
+        display: inline-block;
+}
+
+body{
+    background-image: url(../images/indexxx.jpeg);
+    margin-top: 6.8em;
+}
+
+.MainMenu{
+        
+    background: whitesmoke;
+	left: 0;
+	line-height: 3.75em;
+	position: fixed;
+	right: 0;
+	text-align: center;
+	top: 0;
+	z-index: 1;
+    box-shadow: 0 0 5px rgba(0,0,0,1);
+}
+
+.MainMenu-item{
+	display: inline-block;
+        float: right;
+        text-shadow: 0 .5px 0.4px rgba(0,0,0,1);
+        margin-top: 0em;
+        
+
+}
+
+.MainMenu-item:hover{
+        text-shadow: 0 .5px .5px rgba(0,0,0,1);
+    
+}
+
+.MainMenu-list{
+        margin-bottom: 0;
+                
+}
+
+.MainMenu-link{
+    text-decoration: none;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-family: sans-serif;
+    color: #d21834;
+    font-size: 1em;
+     text-shadow: 0 .5px .5px rgba(0,0,0,1);
+    
+}
+
+.MainMenu-link:hover{
+    text-shadow: 0 .5px .5px rgba(0,0,0,1);
+}
+
+.MainMenu-Register{
+    background-color: whitesmoke;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    padding-left: 1.8em;
+    padding-right: 1.8em;
+    text-decoration: none;
+    color: #d21834;
+    border-radius:.3em;
+    margin-right: 1em;
+    font-family: sans-serif;
+    text-shadow: 0  0 .5px rgba(0,0,0,1);
+    border:#d21834 solid 2px;
+    
+}
+
+.MainMenu-Register:hover{
+    background-color:#d21834;
+    color:white;
+    text-shadow: 0  0 5px rgba(0,0,0,1);
+}
+
+.MainMenu-Search{
+    font-family: sans-serif;
+}
+.image-logo{
+    float: left;
+    margin-bottom: 1em;
+    margin-top: 0;
+    border-radius: .5em;
+}
+.MainMenu-Search{
+    padding-left: 5em;
+    padding-right: 5em;
+    border-radius: .5em;
+    margin-right: 4em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border: solid 2px #d21834;
+}
+.boton-search{
+   background-color: #d21834;
+   padding-bottom: .8em;
+   padding-top: .8em;
+   padding-left: 1.5em;
+   padding-right: 1.5em;
+   text-decoration: none;
+   color: white;
+   font-family: sans-serif;
+   text-shadow: 0  0 .5px rgba(0,0,0,1);
+   box-shadow: 0 0  5px rgba(0,0,0,.5);
+
+}
+
+
+/* Estilos de Registro */
+
+.Form-register{
+    display: right;
+    max-width: 15em;
+    
+}
+
+.Form-item{
+    display: block;
+    border: none;
+    border-radius: 1em;
+    padding: 1.5em;
+    margin: .5em;
+}
+
+.Form-item1,
+.Form-item2,
+.Form-item3,
+.Form-item4{
+    display: block;
+    border: none;
+    border-radius: 1em;
+    padding: 1.5em;
+    margin: .5em;
+}
+
+.Form-item1{
+    padding-right: 3em;
+}
+
+.Form-item2{
+    padding-right: 3.5em;
+}
+
+.Form-item4{
+    width: 15.5em;
+}
+.SectionIndex{
+    background-color: whitesmoke;
+    background:rgba(0, 0, 0, .3);
+    margin-top: 1em;
+    padding-bottom: 1em;
+    display: inline-block;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin-bottom: 2.5em;
+}
+.div-slider{
+    display: inline-block;
+    margin-top: 3em;
+    margin-left: 3em;
+}
+.titleIndex{
+    margin: 0;
+    color: #807a64;
+    display: inline-block;
+    vertical-align: top;
+    font-family: sans-serif;
+}
+.footer{
+    text-align: center;
+    background-color: whitesmoke;
+    box-shadow: 2px 0 1px rgba (0,0,0,1);
+    bottom: 0;
+}
+.parrafo-index{
+    margin-top: 1em;
+    display: inline-block;
+    float: left;
+    font-family: sans-serif;
+    font-size: 2em;
+    max-width: 8em;
+    color: #d21834;
+    text-shadow: 0 1px 2px rgba(0,0,0,1);
+    box-shadow: 0 1px 2px rgba (0,0,0,1);
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-radius: .5em;
+}
+
+/* Estilos del Footer*/
+
+
+
+.Subfooter{
+    display: inline-block;
+}
+
+.Footer-item{
+    display: inline-block;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.FooterLink{
+    text-decoration: none;
+    color: #d21834;
+    text-shadow: 0 1px 1px rgba(0,0,0,1);
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 1em;
+    margin: 5em;
+    
+}
+
+.FooterLink:hover{
+    color: #d21834;
+    background-color: whitesmoke;
+    border: solid 2px #d21834;
+    border-radius: .2em;
+    text-shadow: 0 1px 1px rgba(0,0,0,1);
+    
+}
+/*estilos ingresar usuario*/
+.input{
+    border: none;
+    border-radius: .3em;
+    text-align: center;
+    padding: .6em; 
+    display: block;
+    margin-left: 20em;
+}
+.form-register{
+    padding-bottom: 14em;
+    margin-top: 8em;
+    margin-bottom: 2em;
+    background:rgba(0, 0, 0, .3);
+}
+.Register-user{
+    margin-left:15em;
+    margin-right: 15em;
+}
+
+/* Iconos */
+
+.Icon{
+}
+/* responsive desing*/
+
+@media screen and (max-width: 400px){
+    .image-logo{
+        width: 200px;
+        margin-left: 2em;
+    }
+    .MainMenu-Search{
+        width: 12em;
+        padding-right: .5em;
+        padding-left: .3em;
+        margin-left: -45px;
+    }
+    .button-search{
+        font-size: .8em;
+        padding: 0;
+        padding-top: -1em;
+        display: inline-block;
+        margin-left: -3em;
+    }
+}
